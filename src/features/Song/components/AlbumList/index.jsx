@@ -11,7 +11,7 @@ function AlbumList({albumList}) {
         <ul className='album-list'>
            {
             albumList.map(album =>(
-                <li key={album.id}>
+                <li key={album.id + Math.random()}>
                     <Album album={album}/>
                 </li>
             ))
